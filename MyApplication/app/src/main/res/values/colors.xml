@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#00d0eb</color>
+    <color name="tabColor">#00d0eb</color>
+    <color name="tabnotColor">#afe1e7</color>
+    <color name="apptextColor">#1fc1d6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="agricultureforestry">#84c740</color>
+    <color name="assemblyoperation">#ba5573</color>
+    <color name="defense">#00645d</color>
+    <color name="educationculture">#db49a5</color>
+    <color name="environmentlabor">#9bcb6b</color>
+    <color name="foreign">#0086ca</color>
+    <color name="futurecreation">#c6006f</color>
+    <color name="healthwelfare">#e19e35</color>
+    <color name="industrycommercial">#f8b500</color>
+    <color name="information">#006294</color>
+    <color name="law">#eb623b</color>
+    <color name="politicalaffairs">#00a9b2</color>
+    <color name="safety">#ff7777</color>
+    <color name="strategyfinance">#68a6f3</color>
+    <color name="traffic">#378e7a</color>
+    <color name="womenfamily">#eb6da5</color>
+    <color name="basicTextColor">#666666</color>
+    <color name="lawcommentTextColor">#333333</color>
+    <color name="texthintColor">#cccccc</color>
+
+    <color name="loginfilter">#d3d3d4</color>
+    <color name="pinkgraph">#ee8191</color>
+    <color name="bluegraph">#70a8da</color>
+
+    <color name="pinkgraphtext">#ed7374</color>
+    <color name="bluegraphtext">#699dd3</color>
+</resources>

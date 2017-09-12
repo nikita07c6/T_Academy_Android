@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/start_setting_user_info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/tabColor">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="89dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/nickname_register"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:maxLength="12"
+            android:hint="닉네임 입력"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/nickname_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nickname_register"
+            android:background="@drawable/btn_duplication" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/line_nickname" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/myundongbox">
+        <EditText
+            android:id="@+id/address_insert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="읍, 면, 동 입력"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"/>
+        <ImageView
+            android:id="@+id/join_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/icn_residencesearch"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/signal_rjwnwl" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/address_recycler"
+        android:layout_width="260dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/privacy_btn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/check_box_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/agree_all" />
+
+        <ImageView
+            android:id="@+id/inquire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/agree_all_see"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_nextpage"/>
+
+
+</LinearLayout>

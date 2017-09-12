@@ -1,0 +1,58 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00d0eb</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/tabColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="tabSelectedTextColor">#1fc1d6</item>
+        <item name="tabIndicatorHeight">3dp</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">#afe1e7</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert" />
+
+    <style name="TabTextTheme" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <!--다이얼로그 스타일-->
+    <style name="GenericProgressBackground" parent="android:Theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#00111111</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="AppcompatFullscreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

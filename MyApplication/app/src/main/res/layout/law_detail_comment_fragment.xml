@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/text_comment" />
+
+        <TextView
+            android:id="@+id/law_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/comment"
+            android:text="0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/all"
+            android:layout_width="36dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/comment_all_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/agree"
+            android:layout_width="35dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/all"
+            android:background="@drawable/comment_yes_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/disagree"
+            android:layout_width="36dp"
+            android:layout_height="19dp"
+            android:layout_alignBottom="@+id/agree"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/agree"
+            android:layout_toRightOf="@+id/agree"
+            android:background="@drawable/comment_no_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <Spinner
+            android:id="@+id/user_comment_standard"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ddddd"
+            android:popupBackground="@color/apptextColor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/user_comment_standard"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/law_comment_bottomline" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/agree_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/law_comment_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</LinearLayout>
+

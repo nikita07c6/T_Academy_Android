@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:gravity="center_horizontal|center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/vote_member_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="37dp"
+        android:src="@drawable/icn_profile" />
+
+    <TextView
+        android:id="@+id/vote_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="2dp"
+        android:text="의원이름"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/vote_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/nothing"/>
+
+</LinearLayout>

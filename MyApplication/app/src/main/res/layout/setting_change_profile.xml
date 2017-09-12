@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/setting_change_profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_image"
+                        android:layout_width="109dp"
+                        android:layout_height="109dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/profile_basic318" />
+
+                    <ImageView
+                        android:id="@+id/profile_picture_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="117dp"
+                        android:background="@drawable/btn_gallery" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/setting_nick_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/textbox_nickname" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="196dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/setting_nick_title"
+                            android:layout_toRightOf="@+id/setting_nick_title"
+                            android:textColor="@color/lawcommentTextColor"
+                            android:textSize="15sp"
+                            android:background="@android:color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/setting_nick_change_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/btn_change" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="328dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/news_bottomline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/setting_home_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/textbox_habitation" />
+
+                        <TextView
+                            android:id="@+id/editText1"
+                            android:layout_width="196dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/setting_home_title"
+                            android:layout_toLeftOf="@+id/setting_home_change_btn"
+                            android:layout_toRightOf="@+id/setting_home_title"
+                            android:textColor="@color/lawcommentTextColor"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/setting_home_change_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/btn_change" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="328dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/news_bottomline" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/setting_topic_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/textbox_favorite" />
+
+
+                        <ImageView
+                            android:id="@+id/setting_topic_change_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/btn_change" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/interest_icn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/start_setting_user_info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/tabColor">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/line_nickname" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/myundongbox">
+
+        <EditText
+            android:id="@+id/address_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="읍, 면, 동 입력"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/icn_residencesearch"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/signal_rjwnwl" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/address_recycler"
+        android:layout_width="260dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

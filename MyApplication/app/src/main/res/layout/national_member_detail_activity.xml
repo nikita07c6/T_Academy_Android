@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/national_member_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/my_national_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp">
+
+            <ToggleButton
+                android:id="@+id/interest_rep_Btn"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/interest_toggle"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/party_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                     />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:background="@drawable/btn_twitter" />
+
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/btn_facebook" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/twitter"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="143dp"
+                        android:layout_height="109dp"
+                        android:gravity="end|bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/my_national_member_elect_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/textfield_4"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="당선횟수"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/my_national_member_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_national_member_elect_num"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/textfield_5"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="생년월"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="109dp"
+                        android:layout_marginLeft="143dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/my_national_member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/textfield_1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:text="성명, 당선시 득표율"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/my_national_member_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/textfield_2"
+                            android:maxLength="12"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="지역구 이름"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/my_national_member_ex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/textfield_3"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:text="상임위원회 경력사항"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <!--나중에 glide로 받아서와서 사이즈 조절할것-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/my_national_member_image"
+                        android:layout_width="109dp"
+                        android:layout_height="109dp"
+                        android:layout_marginLeft="88.5dp"
+                        android:src="@drawable/profile_basic" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/member_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/tabnotColor"
+            app:tabMinWidth="90dp"
+            app:tabMode="fixed" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/member_detail_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/member_tabs"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

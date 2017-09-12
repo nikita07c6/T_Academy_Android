@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/career_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/career_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_career" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/career_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/career_title_layout"
+            android:background="@drawable/law_comment_bottomline"/>
+
+        <LinearLayout
+            android:id="@+id/career_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/career_bottomline"
+            android:orientation="vertical"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/real_committee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/basicTextColor"
+                android:text="위원회"/>
+            <TextView
+                android:id="@+id/real_career"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/basicTextColor"
+                android:layout_below="@+id/real_committee"
+                android:text="경력"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bottomline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/career_layout"
+            android:background="@drawable/law_comment_bottomline"/>
+
+        <ImageView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/bottomline2"
+            android:background="@drawable/textbox_contact" />
+
+        <ImageView
+            android:id="@+id/bottomline3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/contact_title"
+            android:background="@drawable/law_comment_bottomline"/>
+
+        <ImageView
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomline3"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/btn_call"/>
+
+        <ImageView
+            android:id="@+id/btn_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomline3"
+            android:layout_toRightOf="@+id/btn_call"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/btn_email"/>
+
+        <ImageView
+            android:id="@+id/btn_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomline3"
+            android:layout_toRightOf="@+id/btn_email"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/btn_facebook"/>
+
+        <ImageView
+            android:id="@+id/btn_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottomline3"
+            android:layout_toRightOf="@+id/btn_facebook"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/btn_twitter"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+

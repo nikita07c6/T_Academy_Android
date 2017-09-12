@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColorLink="@color/basicTextColor"
+        android:text="text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:lineSpacingExtra="5sp"
+        android:text="이들은 이날 오후 8시, 서울 서대문구 대흥동 이대 정문 앞에서 열린 2차 집회에서 평생교육 단과대 사업(평단사업)인 미래라이프대학 신설 계획 등을 일방적으로 추진하는 등 독단적으로 학교 정책을 결정하고, 이대 캠퍼스에 1600여명의 경찰 병력을 투입시킨 데 대한 책임을 묻기 위해 최 총장이 물러나야 한다고 주장했다. "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/news_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="text"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/news_bottomline"/>
+</LinearLayout>
+
+
+

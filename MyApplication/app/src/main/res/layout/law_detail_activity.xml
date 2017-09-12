@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/law_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="법안보기"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/sns_share_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/committee_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/law_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13sp"
+                            android:textColor="@color/basicTextColor"/>
+
+                        <ToggleButton
+                            android:id="@+id/interest_law_Btn"
+                            android:layout_width="39dp"
+                            android:layout_height="39dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/detail_toggle"
+                            android:checked="true"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn=""/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/law_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/basicTextColor"/>
+
+                    <TextView
+                        android:id="@+id/init_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/basicTextColor"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="4.5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/law_view_count_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="조회수"
+                            android:textSize="12sp"
+                            android:textColor="@color/basicTextColor"/>
+
+                        <TextView
+                            android:id="@+id/law_view_count"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/basicTextColor"/>
+
+                        <FrameLayout
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp">
+                            <ToggleButton
+                                android:id="@+id/law_good_Btn"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/good_toggle"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn=""/>
+
+                            <TextView
+                                android:id="@+id/law_good_count"
+                                android:layout_width="31dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="30dp"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:textColor="@color/basicTextColor"/>
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ToggleButton
+                                android:id="@+id/law_bad_Btn"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bad_toggle"
+                                android:text=""
+                                android:textOff=""
+                                android:textOn=""/>
+
+                            <TextView
+                                android:id="@+id/law_bad_count"
+                                android:layout_width="31dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="30dp"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:textColor="@color/basicTextColor"/>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ree"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/linear"
+        android:background="@color/white"
+        android:layout_margin="0dp">
+
+        <ImageView
+            android:id="@+id/law_detail_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/law_detail_bottomline"/>
+
+        <ImageView
+            android:id="@+id/share_law"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/law_share" />
+
+        <ImageView
+            android:id="@+id/my_national_member_vote_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/share_law"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/personofinterest" />
+
+        <ImageView
+            android:id="@+id/law_review_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_national_member_vote_status"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="13.5dp"
+            android:background="@drawable/screeningprocess" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ree">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/law_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/tabnotColor"
+            app:tabMinWidth="90dp"
+            app:tabMode="fixed" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/law_detail_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/writing_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/btn_comment" />
+
+</RelativeLayout>
+

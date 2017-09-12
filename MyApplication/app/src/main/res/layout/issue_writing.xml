@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/total_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/issue_writing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/issue_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/tabColor">
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/issue_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/issue_writing_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_exit" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/issue_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issue_toolbar"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:hint="질문을 입력하세요."
+                android:maxLength="100"
+                android:textColorHint="@color/texthintColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/issue_question"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="20dp"
+                android:text="0/100"
+                android:textColor="@color/texthintColor"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/layout_container"
+                android:layout_below="@+id/question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/textboxlarge">
+
+                <FrameLayout
+                    android:id="@+id/choice_layout"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="261dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/textboxissue"
+                    android:padding="0dp">
+
+                    <EditText
+                        android:id="@+id/answer_choice1"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="선택"
+                        android:maxLength="25"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColorHint="@color/texthintColor"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/answer_count1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="237dp"
+                        android:layout_marginTop="13dp"
+                        android:text="25"
+                        android:textColor="@color/texthintColor"
+                        android:textSize="13sp"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/insert_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/second_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/choice_layout"
+                            android:layout_marginLeft="140dp"
+                            android:background="@drawable/icn_vs" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="261dp"
+                                android:layout_height="43dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/textboxissue"
+                                android:padding="0dp">
+
+                                <EditText
+                                    android:id="@+id/answer_choice2"
+                                    android:layout_width="220dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="선택2"
+                                    android:maxLength="25"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/texthintColor"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/answer_count2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="237dp"
+                                    android:layout_marginTop="13dp"
+                                    android:text="25"
+                                    android:textColor="@color/texthintColor"
+                                    android:textSize="13sp"
+                                    android:visibility="invisible" />
+                            </FrameLayout>
+                            <ImageView
+                                android:id="@+id/delete2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/choice_layout2"
+                                android:background="@drawable/xx"
+                                android:visibility="invisible"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/third_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/choice_layout"
+                            android:layout_marginLeft="140dp"
+                            android:background="@drawable/icn_vs" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="261dp"
+                                android:layout_height="43dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/textboxissue"
+                                android:padding="0dp">
+
+                                <EditText
+                                    android:id="@+id/answer_choice3"
+                                    android:layout_width="220dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="선택3"
+                                    android:maxLength="25"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/texthintColor"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/answer_count3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="237dp"
+                                    android:layout_marginTop="13dp"
+                                    android:text="25"
+                                    android:textColor="@color/texthintColor"
+                                    android:textSize="13sp"
+                                    android:visibility="invisible" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:id="@+id/delete3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/choice_layout2"
+                                android:background="@drawable/xx"
+                                android:visibility="invisible"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/fourth_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/choice_layout"
+                            android:layout_marginLeft="140dp"
+                            android:background="@drawable/icn_vs" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="261dp"
+                                android:layout_height="43dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/textboxissue"
+                                android:padding="0dp">
+
+                                <EditText
+                                    android:id="@+id/answer_choice4"
+                                    android:layout_width="220dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="선택4"
+                                    android:maxLength="25"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/texthintColor"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/answer_count4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="237dp"
+                                    android:layout_marginTop="13dp"
+                                    android:text="25"
+                                    android:textColor="@color/texthintColor"
+                                    android:textSize="13sp"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                            <ImageView
+                                android:id="@+id/delete4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/choice_layout2"
+                                android:background="@drawable/xx"
+                                android:visibility="visible"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_below="@+id/choice_layout"
+                    android:background="@drawable/icn_vs" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+                    <FrameLayout
+                        android:id="@+id/choice_layout2"
+                        android:layout_width="261dp"
+                        android:layout_height="43dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/textboxissue"
+                        android:padding="0dp">
+
+                        <EditText
+                            android:id="@+id/answer_choice5"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:hint="선택5"
+                            android:maxLength="25"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColorHint="@color/texthintColor"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/answer_count5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="237dp"
+                            android:layout_marginTop="13dp"
+                            android:text="25"
+                            android:textColor="@color/texthintColor"
+                            android:textSize="13sp"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/choice_layout2"
+                            android:background="@drawable/btn_plus" />
+
+                        <ImageView
+                            android:id="@+id/delete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/choice_layout2"
+                            android:background="@drawable/xx"
+                            android:visibility="invisible"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/issue_writing_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_register" />
+
+</RelativeLayout>

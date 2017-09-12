@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/interest_member"
+        android:layout_width="100dp"
+        android:layout_height="125dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ToggleButton
+            android:id="@+id/interest_mark"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/interest_toggle"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="32dp"
+            android:text="의원이름"
+            android:textColor="@color/basicTextColor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/member_birth_hometown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/member_name"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:maxLines="1"
+            android:text="출생일, 고향"
+            android:textColor="@color/basicTextColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/member_birth_hometown"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:maxLines="1"
+            android:text="지역구"
+            android:textColor="@color/basicTextColor"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/party_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/sns_share_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/white">
+
+        <LinearLayout
+            android:id="@+id/question_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/issue_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="23dp"
+                android:text="이슈 질문"
+                android:textColor="@color/lawcommentTextColor"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="23dp"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer1">
+
+                <ImageView
+                    android:id="@+id/issue_question1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/questionbox" />
+
+                <ImageView
+                    android:id="@+id/percent_image1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/percent" />
+
+                <TextView
+                    android:id="@+id/issue_answer1"
+                    android:text="답변 보기"
+                    android:textSize="12sp"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/issue_agree_percent1"
+                    android:textSize="12sp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer3"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/issue_question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/questionbox" />
+
+                <ImageView
+                    android:id="@+id/percent_image3"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/percent" />
+
+                <TextView
+                    android:id="@+id/issue_answer3"
+                    android:text="답변 보기"
+                    android:textSize="12sp"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/issue_agree_percent3"
+                    android:textSize="12sp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer4"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/issue_question4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/questionbox" />
+
+                <ImageView
+                    android:id="@+id/percent_image4"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/percent" />
+
+                <TextView
+                    android:id="@+id/issue_answer4"
+                    android:text="답변 보기"
+                    android:textSize="12sp"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/issue_agree_percent4"
+                    android:textSize="12sp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer5"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/issue_question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/questionbox" />
+
+                <ImageView
+                    android:id="@+id/percent_image5"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/percent" />
+
+                <TextView
+                    android:id="@+id/issue_answer5"
+                    android:text="답변 보기"
+                    android:textSize="12sp"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/issue_agree_percent5"
+                    android:textSize="12sp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="31dp">
+
+                <ImageView
+                    android:id="@+id/issue_question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/questionbox" />
+
+                <ImageView
+                    android:id="@+id/percent_image2"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/percent" />
+
+                <TextView
+                    android:id="@+id/issue_answer2"
+                    android:text="답변 보기"
+                    android:textSize="12sp"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/issue_agree_percent2"
+                    android:textSize="12sp"
+                    android:layout_marginRight="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/lawcommentTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/question_part"
+            android:background="@drawable/issue_bottomline" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="50dp"
+                android:onClick="onIssueClicked"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icn_profile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="사용자 닉네임"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="날짜랑 시간"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/share_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/modifier"
+                    android:src="@drawable/icn_share" />
+
+                <ImageView
+                    android:id="@+id/modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:spinnerMode="dialog"
+                    android:src="@drawable/issue_more_01"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
